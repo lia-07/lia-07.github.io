@@ -6,20 +6,22 @@
     <title>lia-07 | web dev</title>
     <style>
       /* Colours from Flexoki - https://stephango.com/flexoki */
-
       :root {
         --tx: #100f0f;
+        --tx-2: #575653;
+        --tx-3: #343331;
         --bg: #fffcf0;
-        --bl-2: #205ea6;
-        --bl: #4385be;
+        --ac-2: #205ea6;
+        --ac: #4385be;
       }
 
       @media (prefers-color-scheme: dark) {
         :root {
           --bg: #100f0f;
           --tx: #fffcf0;
-          --bl: #205ea6;
-          --bl-2: #4385be;
+          --tx-2: #878580;
+          --ac-2: #3aa99f;
+          --ac: #24837b;
         }
       }
 
@@ -33,7 +35,7 @@
         margin-top: 40px;
         padding: 8px;
         background: var(--bg)
-          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><filter id="noise" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feBlend mode="screen"/></filter><rect width="500" height="500" filter="url(%23noise)" opacity="0.3"/></svg>')
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><filter id="noise" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feBlend mode="screen"/></filter><rect width="500" height="500" filter="url(%23noise)" opacity="0.15"/></svg>')
           repeat;
         color: var(--tx);
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -47,6 +49,7 @@
 
       h2 {
         font-style: italic;
+        color: var(--tx-2);
       }
 
       header,
@@ -63,15 +66,17 @@
       }
 
       a {
-        color: var(--bl-2);
-        padding: 4px;
-        margin: -4px;
+        color: var(--ac-2);
+        padding: 1px 2px;
+        margin: -1px -2px;
         text-decoration: none;
+        border-radius: 2px;
       }
 
       a:hover {
-        color: var(--bl);
+        color: var(--ac);
         text-decoration: underline;
+        text-underline-offset: 2px;
       }
 
       span {
@@ -109,7 +114,7 @@
         </li>
         <li>
           <a href="https://dreamscribe.lia.lol/" target="_blank">dreamscribe</a>
-          - Free online dream journal
+          - Online dream journal
         </li>
         <li>
           <a href="https://github.com/lia-07/litepipe" target="_blank"
