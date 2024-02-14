@@ -32,26 +32,33 @@
       body {
         margin-top: 40px;
         padding: 8px;
-        background-color: var(--bg);
+        background: var(--bg)
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><filter id="noise" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feBlend mode="screen"/></filter><rect width="500" height="500" filter="url(%23noise)" opacity="0.3"/></svg>')
+          repeat;
         color: var(--tx);
-        font-family:
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          Oxygen,
-          Ubuntu,
-          Cantarell,
-          "Open Sans",
-          "Helvetica Neue",
-          sans-serif;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      hgroup > * {
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 4px;
+      }
+
+      h2 {
+        font-style: italic;
       }
 
       header,
       main {
         max-width: 600px;
         margin: auto;
+      }
+
+      p,
+      i,
+      span {
+        font-size: large;
       }
 
       a {
@@ -65,20 +72,24 @@
         color: var(--bl);
         text-decoration: underline;
       }
+
+      span {
+        font-style: normal;
+      }
     </style>
   </head>
 
   <body>
     <header>
       <hgroup>
-        <h1>👋 Hi, I'm Lia.</h1>
+        <h1>&#x1F44B; Hi, I'm Lia.</h1>
         <h2>A small-time web dev from New Zealand.</h2>
       </hgroup>
     </header>
     <main>
       <p>
         I'm really busy with some projects at the moment, and don't have time to
-        make a proper portfolio 😣.
+        make a proper portfolio. &#x1F623;
       </p>
       <p>
         Email:
@@ -86,9 +97,12 @@
           >lia-8629@proton.me</a
         >, GitHub:
         <a href="https://github.com/lia-07" target="_blank">@lia-07</a>, X:
-        <a href="https://twitter.com/l1a07_" target="_blank">@l1a07_</a>
+        <a href="https://twitter.com/l1a07_" target="_blank">@l1a07_</a>.
       </p>
-      <i>Maybe overly simplistic websites weren't so bad...</i>
+      <i
+        >Maybe overly simplistic websites weren't so bad...
+        <span>&#x1F31E; </span></i
+      >
     </main>
   </body>
 </html>
