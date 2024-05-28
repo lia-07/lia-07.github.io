@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -26,18 +26,11 @@
         }
       }
 
-      * {
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 150ms;
-      }
-
       body {
-        margin-top: 40px;
+        margin-top: 36px;
         padding: 8px;
-        background: var(--bg)
-          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><filter id="noise" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feBlend mode="screen"/></filter><rect width="500" height="500" filter="url(%23noise)" opacity="0.15"/></svg>')
-          repeat;
+        padding-bottom: 48px;
+        background: var(--bg);
         color: var(--tx);
         font-family: Georgia, "Times New Roman", Times, serif;
       }
@@ -48,7 +41,7 @@
         margin-bottom: 4px;
       }
 
-      h2 {
+      hgroup p {
         font-style: italic;
         color: var(--tx-2);
       }
@@ -63,7 +56,8 @@
       i,
       span,
       li {
-        font-size: large;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
       }
 
       a {
@@ -72,6 +66,9 @@
         margin: -1px -2px;
         text-decoration: none;
         border-radius: 2px;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
       }
 
       a:hover {
@@ -98,23 +95,39 @@
   <body>
     <header>
       <hgroup>
-        <h1>&#x1F44B; Hi, I'm Lia.</h1>
-        <h2>A small-time web dev from New Zealand.</h2>
+        <h1>Lia's page.</h1>
+        <p>Hobbyist designer, programmer, and arts enthusiast.</p>
       </hgroup>
     </header>
     <main>
       <p>
-        I'm really busy with some projects at the moment, and don't have time to
-        make a proper portfolio. &#x1F623;
+        This site needs some upgrades — between my part-time job and school I
+        haven't had much time to work on the things I enjoy.
       </p>
-      <p>Some things I've made:</p>
+      <p>
+        I am familiar with several programming languages including Gleam, Go,
+        JavaScript/TypeScript, PHP, and Python.
+      </p>
+      <p>
+        I'm comfortable in the command line and have experience operating a
+        Linux-based web server.
+      </p>
+      <p>
+        Currently, I am interested in gaining more low-level skills and adopting
+        a
+        <a href="https://htmx.org/">hypermedia based approach</a> for building
+        web apps.
+      </p>
+      <p>Some projects I have worked on:</p>
       <ul>
         <li>
           <a href="https://asm.zip" target="_blank">asm.zip</a> - Free URL
           shortener (frontend)
         </li>
         <li>
-          <a href="https://dreamscribe.lia.lol/" target="_blank">dreamscribe</a>
+          <a href="https://dreamscribe.pages.dev" target="_blank"
+            >dreamscribe</a
+          >
           - Online dream journal
         </li>
         <li>
@@ -129,13 +142,10 @@
         <a href="mailto:lia-8629@proton.me" target="_blank"
           >lia-8629@proton.me</a
         >, GitHub:
-        <a href="https://github.com/lia-07" target="_blank">@lia-07</a>, X:
-        <a href="https://twitter.com/l1a07_" target="_blank">@l1a07_</a>.
+        <a href="https://github.com/lia-07" target="_blank">@lia-07</a>,
+        Twitter/X:
+        <a href="https://twitter.com/liapko_" target="_blank">@liapko_</a>.
       </p>
-      <i
-        >Maybe overly simplistic websites weren't so bad...
-        <span>&#x1F31E; </span></i
-      >
     </main>
   </body>
 </html>
